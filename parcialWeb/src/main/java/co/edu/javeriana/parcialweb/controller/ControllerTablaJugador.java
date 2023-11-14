@@ -38,7 +38,7 @@ public class ControllerTablaJugador {
 
         Optional<Jugador> jugador = jugadorRepository.findById(id);
         if (jugador.isPresent()) {
-            jugadorEditar.setId(id);
+            jugadorEditar.setId(Math.toIntExact(id));
             return ResponseEntity.ok(jugadorRepository.save(jugadorEditar));
         }
         return ResponseEntity.notFound().build();

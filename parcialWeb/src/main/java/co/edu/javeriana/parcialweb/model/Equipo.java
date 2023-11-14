@@ -20,7 +20,6 @@ public class Equipo {
     @Column(name = "ciudad", nullable = false)
     private String ciudad;
 
-
     @Column(name = "copas_internacionales")
     private Integer copasInternacionales;
 

@@ -37,7 +37,7 @@ public class ControllerTablaEquipo {
 
         Optional<Equipo> equipo = equipoRepository.findById(id);
         if (equipo.isPresent()) {
-            equipoEditar.setId(id);
+            equipoEditar.setId(Math.toIntExact(id));
             return ResponseEntity.ok(equipoRepository.save(equipoEditar));
         }
         return ResponseEntity.notFound().build();

@@ -11,5 +11,6 @@ import java.io.Serializable;
 public class EquipoDto implements Serializable {
     Long id;
     String nombre;
+    String ciudad;
     Integer copasInternacionales;
 }
