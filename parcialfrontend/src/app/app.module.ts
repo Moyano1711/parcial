@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {EquipoService} from "./services/equipo.service";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   providers: [
-
+    EquipoService
   ],
   bootstrap: [AppComponent]
 })

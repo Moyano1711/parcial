@@ -8,7 +8,7 @@ import {Equipo} from "../model/equipo.model";
 })
 
 export class EquipoService{
-  private apiUrl: string = 'http://localhost:8080/parcial/api/equipo/';
+  private apiUrl: string = 'http://localhost:8081/parcialWeb/api/equipo/';
 
   public getEquipos (){
     return from (axios.get(this.apiUrl))

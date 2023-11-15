@@ -1,11 +1,9 @@
 export class Equipo{
-  id : number
   nombre : string
   ciudad : string
   copasInternacionales :  number
 
-  constructor(id : number, nombre:string, ciudad:string, copasInternacionales:number) {
-    this.id = id
+  constructor(nombre:string, ciudad:string, copasInternacionales:number) {
     this.nombre = nombre
     this.ciudad = ciudad
     this.copasInternacionales = copasInternacionales

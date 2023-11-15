@@ -47,7 +47,7 @@ public class ControllerTablaEquipo {
         }
         return ResponseEntity.notFound().build();
     }
-    
+
     @CrossOrigin()
     @DeleteMapping("{id}")
     private Boolean eliminarEquipo(@PathVariable Long id){
